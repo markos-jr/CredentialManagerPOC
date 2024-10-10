@@ -15,7 +15,7 @@ namespace CredentialManagerPOC.Controllers
         }
 
         [HttpGet("get-connection-string")]
-        public IActionResult GetConnectionString(string targetName)
+        public IActionResult GetConnectionString([FromQuery] string targetName)
         {
             try
             {
